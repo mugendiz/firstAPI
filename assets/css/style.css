@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+}
+
+
+body {
+    /* The image used */
+
+    background-image: url("https://i.ytimg.com/vi/1A1caCCKn5A/maxresdefault.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background: cover;
+
+}
+
+.jumbotron {
+  background-color: #f2b600;
+  /*text-align: center;*/
+  opacity: 0.8;
+  padding: 100px;
+}
+
+/*https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg*/
