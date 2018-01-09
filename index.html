@@ -1,74 +1,92 @@
 <!doctype html>
-<!-- <html lang="en">
+<html lang="en">
+
 <head>
-  <title>Whale GIFs!</title>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  <title>Whales Giphy API</title>
 </head>
-<body> -->
+
+<body>
+  <div class="container">
+    <hr>
+    <h1 class="display-3">The Aquarium!</h1>
+    <h4 class="lead">Here you can view fun GIFs by pressing the buttons. You can also search and add more categories.</h4>
+
+    <hr class="my-4">
+    <div class="content">
+
+      <!-- search box -->
+      <!-- <div class="searchBox">
+        <input type="text" class="search" placeholder="Search..">
+        <button type="submit"><class="search"><img id=searchBtn src="assets/images/search_icon.png" alt=""></button>
+      </div> -->
+
+<!-- ========================================== -->
+  <div class="searchBox">
+      <form id="gif-form">
+            <label for="gif-input"></label>
+            <input type="text" id="gif-input"><br>
+
+            <!-- This button will trigger our AJAX call -->
+            <input id="find-gif" type="submit" value="Gif Search">
+          </form>
+    </div>
+<!-- =========================================== -->
+
+      <br>
+
+      <div class="row">
+        <div class="col"><button id="whale-button">Whale Button</button></div>
+        <div class="col"><button id="stingray-button">Stingray Button</button></div>
+        <div class="col"><button id="starfish-button">Starfish Button</button></div>
+        <div class="col"><button id="lionfish-button">Lionfish Button</button></div>
+        <br>
+      </div>
+      <br>
+      <div class="row">
+
+        <div class="col"><button id="sharks-button">Sharks Button</button></div>
+        <div class="col"><button id="eel-button">Eel Button</button></div>
+        <div class="col"><button id="dolphin-button">Dolphin Button</button></div>
+        <div class="col"><button id="salmon-button">Salmon Button</button></div>
+      </div>
+
+      <br>
+
+      <hr>
+    </div>
 
 
 
+    <!-- images DIV -->
+    <div class="images">
+    </div>
 
 
 
-
-
-
- <!-- 0000000 TEST AREA 00000000 dc6zaTOxFJmzC&tag -->
- <!doctype html>
- <html lang="en">
-   <head>
-     <!-- Required meta tags -->
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
-     <title>Whales Giphy API</title>
-   </head>
-   <body>
-     <div class="container">
-       <h1 class="display-3">Whales Swimming Everywhere!</h1>
-       <hr class="my-4">
-       <div class="content">
-         <h4 class="lead">Here you can view fun GIFs by pressing the buttons. You can also search and add more categories.</h4>
-
-         <button id="whale-button">Whale Button</button>
-         <button id="stingray-button">Stingray Button</button>
-         <button id="starfish-button">Starfish Button</button>
-         <button id="lionfish-button">Lionfish Button</button>
-         <button id="sharks-button">Sharks Button</button>
-         <button id="eel-button">Eel Button</button>
-         <button id="catfish-button">Catfish Button</button>
-         <button id="cat-button">Cat Button</button>
-
-
-<!-- images DIV -->
-
-<div id="images">
   </div>
-
-     <!-- Optional JavaScript -->
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-     <script src="assets/javascript/app.js"></script>
-
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="assets/javascript/app.js"></script>
 
 
-   </body>
- </html>
+
+</body>
+
+</html>
 
 
- <!-- 0000000 TEST AREA 00000000 -->
+<!-- 0000000 TEST AREA 00000000 -->
 
+<!-- 0000000 TEST AREA 00000000 dc6zaTOxFJmzC&tag -->
 
 <!--
       <div id="gifs-appear-here">
@@ -79,9 +97,9 @@
   </div>
  -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 

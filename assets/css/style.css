@@ -1,20 +1,12 @@
-body, html {
-    height: 100%;
-}
-
 
 body {
-    /* The image used */
-
-    background-image: url("https://i.ytimg.com/vi/1A1caCCKn5A/maxresdefault.jpg");
-    /* Full height */
-    height: 100%;
-
     /* Center and scale the image nicely */
+    /*background-image: url("https://i.ytimg.com/vi/1A1caCCKn5A/maxresdefault.jpg");*/
+    background-color: #F8C224;
+    height: 100%;
     background-position: center;
     background-repeat: repeat;
     background: cover;
-
 }
 
 .jumbotron {
@@ -24,4 +16,29 @@ body {
   padding: 100px;
 }
 
-/*https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg*/
+.images {
+padding: 10px;
+}
+
+hr {
+  height: 7px;
+  background-color: #FFF4CC;
+}
+
+.row, h1 {
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+.searchBox {
+  text-align: center;
+  font-size: 17px;
+
+}
+
+#searchBtn {
+  height: 20px;
+}
